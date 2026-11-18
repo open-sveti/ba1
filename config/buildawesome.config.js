@@ -4,8 +4,8 @@
 import { RenderPlugin } from "@11ty/eleventy";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
-import onePlugin from "@buildawesome.one/plugin";
-import { siteData } from "@buildawesome.one/plugin/features/siteData.js";
+import onePlugin from "@sveti/ba1-plugin";
+import { siteData } from "@sveti/ba1-plugin/features/siteData.js";
 import pluginTOC from "@uncenter/eleventy-plugin-toc";
 /* Libraries (A-Z) */
 import markdownIt from "markdown-it";
@@ -44,7 +44,7 @@ export default async function ($config, pluginOptions = {}) {
   });
   $config.addPlugin(RenderPlugin);
   $config.addPlugin(eleventyNavigationPlugin);
-  $config.addPlugin(onePlugin, pluginOptions.plugins?.["@buildawesome.one/plugin"] ?? { mdAutoRawTags: true });
+  $config.addPlugin(onePlugin, pluginOptions.plugins?.["@sveti/ba1-plugin"] ?? { mdAutoRawTags: true });
   $config.addPlugin(pluginTOC, {
     ignoredElements: [".header-anchor", "sub"],
     ul: true,
@@ -127,11 +127,11 @@ export default async function ($config, pluginOptions = {}) {
     root: [
       $config.directories.includes,
       // for symlinks to work after https://github.com/harttle/liquidjs/pull/870 (optional: skipped if node_modules absent)
-      ...(fs.existsSync("node_modules/@anyblades/blades/_includes")
-        ? [fs.realpathSync(path.resolve("node_modules/@anyblades/blades/_includes"))]
+      ...(fs.existsSync("node_modules/@sveti/blades/_includes")
+        ? [fs.realpathSync(path.resolve("node_modules/@sveti/blades/_includes"))]
         : []),
-      ...(fs.existsSync("../../node_modules/@anyblades/blades/_includes")
-        ? [fs.realpathSync(path.resolve("../../node_modules/@anyblades/blades/_includes"))]
+      ...(fs.existsSync("../../node_modules/@sveti/blades/_includes")
+        ? [fs.realpathSync(path.resolve("../../node_modules/@sveti/blades/_includes"))]
         : []),
     ],
   });

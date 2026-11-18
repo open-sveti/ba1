@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@buildawesome.one/kit.monorepo",
+  "name": "@sveti/ba1.monorepo",
   "workspaces": [
     "cli/",
     "cli/e2e/",
@@ -21,7 +21,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/buildawesome-one/kit.git"
+    "url": "git+https://github.com/open-sveti/ba1.git"
   },
   "---": "---"
 }

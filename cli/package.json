@@ -1,5 +1,5 @@
 {
-  "name": "@buildawesome.one/cli",
+  "name": "@sveti/ba1-cli",
   "version": "1.5.1",
   "bin": "bin/dev.js",
   "type": "module",
@@ -29,7 +29,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/buildawesome-one/kit.git",
+    "url": "git+https://github.com/open-sveti/ba1.git",
     "directory": "cli/"
   },
   "---": "---"

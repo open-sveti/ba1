@@ -1,6 +1,6 @@
 [submodule "starter"]
 	path = starter
-	url = https://github.com/buildawesome-one/starter.git
+	url = https://github.com/open-sveti/ba1-starter.git
 [submodule "examples"]
 	path = examples
-	url = https://github.com/buildawesome-one/examples.git
+	url = https://github.com/open-sveti/ba1-examples.git

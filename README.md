@@ -24,13 +24,13 @@
 <!--section:plugin-->
 
 ```sh
-npm install @buildawesome.one/plugin
+npm install @sveti/ba1-plugin
 ```
 
 Then `addPlugin()` in your config:
 
 ```js {data-caption=buildawesome.config.js}
-import onePlugin from "@buildawesome.one/plugin";
+import onePlugin from "@sveti/ba1-plugin";
 
 export default function ($config) {
   $config.addPlugin(onePlugin);
@@ -39,8 +39,8 @@ export default function ($config) {
 
 Live examples:
 
-- https://github.com/buildawesome-one/kit/tree/main/plugin/e2e
-- https://github.com/buildawesome-one/kit/tree/main/config
+- https://github.com/open-sveti/ba1/tree/main/plugin/e2e
+- https://github.com/open-sveti/ba1/tree/main/config
 
 ### Plugin features
 
@@ -80,7 +80,7 @@ $config.addPlugin(onePlugin, {
 <!--section:config-->
 
 ```sh
-npm install @awesome.me/buildawesome @buildawesome.one/config
+npm install @awesome.me/buildawesome @sveti/ba1-config
 ```
 
 Everything is installed automatically; the only manual step is to create a default layout.
@@ -90,8 +90,8 @@ For example, using the built-in [Blades templates](https://blades.dev/tpl/):
 ```sh
 mkdir _includes
 cd _includes/
-ln -s ../node_modules/@anyblades/blades/_includes/blades
-echo "{% extends 'blades/html.njk' %}{% set site = { styles: ['https://cdn.jsdelivr.net/npm/@anyblades/blades@3/css/blades.min.css'] } %}" > default.njk
+ln -s ../node_modules/@sveti/blades/_includes/blades
+echo "{% extends 'blades/html.njk' %}{% set site = { styles: ['https://cdn.jsdelivr.net/npm/@sveti/blades@3/css/blades.min.css'] } %}" > default.njk
 cd ..
 echo "Hello, world! 🎈" > index.md
 ```
@@ -100,7 +100,7 @@ echo "Hello, world! 🎈" > index.md
 : Now you can see the <b class="mark-brand">Build Awesome One</b> in action by using its own built-in config:
 
 ```sh
-npx @awesome.me/buildawesome --serve --config=node_modules/@buildawesome.one/config/buildawesome.config.js
+npx @awesome.me/buildawesome --serve --config=node_modules/@sveti/ba1-config/buildawesome.config.js
 ```
 
 ---<!--{class}-->
@@ -109,7 +109,7 @@ If you don't want to type `--config=...` every time, save it in your `package.js
 
 ```json
 "scripts": {
-  "build": "buildawesome --config=node_modules/@buildawesome.one/config/buildawesome.config.js",
+  "build": "buildawesome --config=node_modules/@sveti/ba1-config/buildawesome.config.js",
   "start": "npm run build -- --serve"
 }
 ```
@@ -118,16 +118,16 @@ Now you can simply `npm run start` / `build`! 🥷
 
 Live examples:
 
-- https://github.com/buildawesome-one/kit/tree/main/config/e2e
-- https://github.com/buildawesome-one/starter/tree/main/.build
-- https://github.com/buildawesome-one/examples
+- https://github.com/open-sveti/ba1/tree/main/config/e2e
+- https://github.com/open-sveti/ba1-starter/tree/main/.build
+- https://github.com/open-sveti/ba1-examples
 
 ---
 
 You can also import and use it as a base config:
 
 ```js {data-caption=buildawesome.config.js}
-import oneConfig from "@buildawesome.one/config";
+import oneConfig from "@sveti/ba1-config";
 
 export default async function ($config) {
   await oneConfig($config);
@@ -137,7 +137,7 @@ export default async function ($config) {
 }
 ```
 
-Live example: https://github.com/buildawesome-one/examples/tree/main/og-images
+Live example: https://github.com/open-sveti/ba1-examples/tree/main/og-images
 
 <!--section-->
 
@@ -151,7 +151,7 @@ https://starter.buildawesome.one/
 
 ## Examples
 
-https://github.com/buildawesome-one/examples
+https://github.com/open-sveti/ba1-examples
 
 ---
 
@@ -199,7 +199,7 @@ https://github.com/buildawesome-one/examples
 <li><a href="//buildawesome.one/cli/">CLI</a></li>
 <li><a href="//buildawesome.one/starters/">Starters</a></li>
 <li><a href="//buildawesome.one/tpl/">Templating</a></li>
-<li><a href="//github.com/buildawesome-one/examples">Examples ↗</a></li></ul>
+<li><a href="//github.com/open-sveti/ba1-examples">Examples ↗</a></li></ul>
 </li>
 
 </ul>

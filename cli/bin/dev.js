@@ -3,11 +3,11 @@
 import { execSync } from "node:child_process";
 import { setDefaultCACertificates } from "node:tls";
 
-execSync("npm link @buildawesome.one/cli @buildawesome.one/config @buildawesome.one/plugin @anyblades/blades", {
+execSync("npm link @sveti/ba1-cli @sveti/ba1-config @sveti/ba1-plugin @sveti/blades", {
   stdio: "inherit",
 });
 
 /* Usage:
 ```sh
-npx node_modules/@buildawesome.one/cli
+npx node_modules/@sveti/ba1-cli
 ```*/
