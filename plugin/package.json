@@ -23,9 +23,6 @@
     "test": "node --test ./**/*.test.js",
     "prepublishOnly": "npm run test"
   },
-  "devDependencies": {
-    "@11ty/lodash-custom": "^5.0.0"
-  },
   "--- METADATA": "---",
   "author": "Anton Staroverov",
   "homepage": "https://buildawesome.one/plugin/",

@@ -4,11 +4,11 @@
 
 <!--section:code-->```js */
 import { readFileSync } from "fs";
-import YAML from "js-yaml";
+import { load } from "js-yaml";
 
 export default function ($config) {
   // Virtual pages
-  const pages = YAML.load(readFileSync($config.directories.input + "/pages.yaml", "utf8"));
+  const pages = load(readFileSync($config.directories.input + "/pages.yaml", "utf8"));
   for (const [index, data] of pages.entries()) {
     const virtualSlug = data.permalink ? data.permalink + "index" : index;
     // console.log(data, virtualSlug);
