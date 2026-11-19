@@ -8,11 +8,11 @@ import onePlugin from "@buildawesome.one/plugin";
 import { siteData } from "@buildawesome.one/plugin/features/siteData.js";
 import pluginTOC from "@uncenter/eleventy-plugin-toc";
 /* Libraries (A-Z) */
+import { load as loadYaml } from "js-yaml";
 import markdownIt from "markdown-it";
 import markdownItAnchor from "markdown-it-anchor";
 import markdownItAttrs from "markdown-it-attrs";
 import slugify from "@sindresorhus/slugify";
-import YAML from "yaml";
 /* System (A-Z) */
 import fs from "node:fs";
 import path from "node:path";
@@ -97,7 +97,7 @@ export default async function ($config, pluginOptions = {}) {
   //```<!--section:code-->```js
 
   /* Data */
-  $config.addDataExtension("yml,yaml", (contents) => YAML.parse(contents));
+  $config.addDataExtension("yml,yaml", (contents) => loadYaml(contents));
   $config.addGlobalData("layout", "default");
   // Sitemap
   $config.addTemplate("sitemap.xml.njk", "", {
