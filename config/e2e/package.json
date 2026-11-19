@@ -9,6 +9,6 @@
     "build": "npm run cli -- build"
   },
   "dependencies": {
-    "@sveti/ba1-config": "^1.5.4"
+    "@sveti/ba1-config": "^1.5.5"
   }
 }

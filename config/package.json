@@ -1,17 +1,17 @@
 {
   "name": "@sveti/ba1-config",
-  "version": "1.5.4",
+  "version": "1.5.5",
   "type": "module",
   "main": "./buildawesome.config.js",
   "dependencies": {
     "@11ty/eleventy-navigation": "^1.0.5",
     "@11ty/eleventy-plugin-rss": "^3.1.0",
     "@sveti/ba1-cli": "^1.5.1",
-    "@sveti/ba1-plugin": "^1.5.0",
+    "@sveti/ba1-plugin": "^1.5.1",
     "@sveti/blades": "^3.1.4",
-    "@uncenter/eleventy-plugin-toc": "^2.1.1",
+    "@uncenter/eleventy-plugin-toc": "^2.1.2",
     "markdown-it": "^15.0.3",
-    "markdown-it-anchor": "^10.0.0",
+    "markdown-it-anchor": "^10.1.0",
     "markdown-it-attrs": "^5.0.1"
   },
   "peerDependencies": {
