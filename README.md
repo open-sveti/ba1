@@ -39,8 +39,8 @@ export default function ($config) {
 
 Live examples:
 
-- https://github.com/buildawesome-one/kit/tree/main/plugin/e2e
-- https://github.com/buildawesome-one/kit/tree/main/config
+- https://github.com/open-sveti/one/tree/main/plugin/e2e
+- https://github.com/open-sveti/one/tree/main/config
 
 ### Plugin features
 
@@ -118,9 +118,9 @@ Now you can simply `npm run start` / `build`! 🥷
 
 Live examples:
 
-- https://github.com/buildawesome-one/kit/tree/main/config/e2e
-- https://github.com/buildawesome-one/starter/tree/main/.build
-- https://github.com/buildawesome-one/examples
+- https://github.com/open-sveti/one/tree/main/config/e2e
+- https://github.com/open-sveti/one-starter/tree/main/.build
+- https://github.com/open-sveti/one-examples
 
 ---
 
@@ -137,7 +137,7 @@ export default async function ($config) {
 }
 ```
 
-Live example: https://github.com/buildawesome-one/examples/tree/main/og-images
+Live example: https://github.com/open-sveti/one-examples/tree/main/og-images
 
 <!--section-->
 
@@ -151,7 +151,7 @@ https://starter.buildawesome.one/
 
 ## Examples
 
-https://github.com/buildawesome-one/examples
+https://github.com/open-sveti/one-examples
 
 ---
 
@@ -199,7 +199,7 @@ https://github.com/buildawesome-one/examples
 <li><a href="//buildawesome.one/cli/">CLI</a></li>
 <li><a href="//buildawesome.one/starters/">Starters</a></li>
 <li><a href="//buildawesome.one/tpl/">Templating</a></li>
-<li><a href="//github.com/buildawesome-one/examples">Examples ↗</a></li></ul>
+<li><a href="//github.com/open-sveti/one-examples">Examples ↗</a></li></ul>
 </li>
 
 </ul>

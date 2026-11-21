@@ -29,4 +29,4 @@ Finally, register it in your `package.json` like this:
 **Done!** 🥷
 : `@sveti/one-cli`'s `npm run start` / `stage` / `build` ready to use in your project, yet easy to maintain!
 
-Live example: https://github.com/buildawesome-one/kit/tree/main/cli/e2e
+Live example: https://github.com/open-sveti/one/tree/main/cli/e2e
