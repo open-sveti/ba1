@@ -90,8 +90,8 @@ For example, using the built-in [Blades templates](https://blades.dev/tpl/):
 ```sh
 mkdir _includes
 cd _includes/
-ln -s ../node_modules/@anyblades/blades/_includes/blades
-echo "{% extends 'blades/html.njk' %}{% set site = { styles: ['https://cdn.jsdelivr.net/npm/@anyblades/blades@3/css/blades.min.css'] } %}" > default.njk
+ln -s ../node_modules/@sveti/blades/_includes/blades
+echo "{% extends 'blades/html.njk' %}{% set site = { styles: ['https://cdn.jsdelivr.net/npm/@sveti/blades@3/css/blades.min.css'] } %}" > default.njk
 cd ..
 echo "Hello, world! 🎈" > index.md
 ```
@@ -212,7 +212,7 @@ https://github.com/buildawesome-one/examples
 
 - [11ty.dev](https://www.11ty.dev/authors/buildawesome-one/)
 - [11tybundle.dev](https://11tybundle.dev/starters/#:~:text=buildawesome%2Done)
-- [blades.ninja](https://blades.dev/#:~:text=build%20awesome%20one)
+- [blades.dev](https://blades.dev/#:~:text=build%20awesome%20one)
 - [sveltiacms.app](https://sveltiacms.app/en/docs/frameworks/eleventy#:~:text=buildawesome%2Done)
 - https://github.com/adamdjbrett/000000076
 - https://github.com/eggplantpasta/greenroom

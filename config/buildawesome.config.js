@@ -127,11 +127,11 @@ export default async function ($config, pluginOptions = {}) {
     root: [
       $config.directories.includes,
       // for symlinks to work after https://github.com/harttle/liquidjs/pull/870 (optional: skipped if node_modules absent)
-      ...(fs.existsSync("node_modules/@anyblades/blades/_includes")
-        ? [fs.realpathSync(path.resolve("node_modules/@anyblades/blades/_includes"))]
+      ...(fs.existsSync("node_modules/@sveti/blades/_includes")
+        ? [fs.realpathSync(path.resolve("node_modules/@sveti/blades/_includes"))]
         : []),
-      ...(fs.existsSync("../../node_modules/@anyblades/blades/_includes")
-        ? [fs.realpathSync(path.resolve("../../node_modules/@anyblades/blades/_includes"))]
+      ...(fs.existsSync("../../node_modules/@sveti/blades/_includes")
+        ? [fs.realpathSync(path.resolve("../../node_modules/@sveti/blades/_includes"))]
         : []),
     ],
   });
