@@ -2,9 +2,9 @@
 
 <section align="center">
 
-<h1>Build Awesome <mark>One¹</mark></h1>
+<h1>Build Awesome <mark>①ne</mark></h1>
 
-<big>All-in-One kit for 11ty / Build&nbsp;Awesome.</big>
+<big>All-in-One kit for Build Awesome (11ty).</big>
 
 <nav>
   <a href="//buildawesome.one/plugin/" role="button">One Plugin ›</a>
