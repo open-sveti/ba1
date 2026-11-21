@@ -4,8 +4,8 @@
 import { RenderPlugin } from "@11ty/eleventy";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import eleventyNavigationPlugin from "@11ty/eleventy-navigation";
-import onePlugin from "@buildawesome.one/plugin";
-import { siteData } from "@buildawesome.one/plugin/features/siteData.js";
+import onePlugin from "@sveti/one-plugin";
+import { siteData } from "@sveti/one-plugin/features/siteData.js";
 import pluginTOC from "@uncenter/eleventy-plugin-toc";
 /* Libraries (A-Z) */
 import { load as loadYaml } from "js-yaml";
@@ -44,7 +44,7 @@ export default async function ($config, pluginOptions = {}) {
   });
   $config.addPlugin(RenderPlugin);
   $config.addPlugin(eleventyNavigationPlugin);
-  $config.addPlugin(onePlugin, pluginOptions.plugins?.["@buildawesome.one/plugin"] ?? { mdAutoRawTags: true });
+  $config.addPlugin(onePlugin, pluginOptions.plugins?.["@sveti/one-plugin"] ?? { mdAutoRawTags: true });
   $config.addPlugin(pluginTOC, {
     ignoredElements: [".header-anchor", "sub"],
     ul: true,

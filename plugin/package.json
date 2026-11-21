@@ -1,5 +1,5 @@
 {
-  "name": "@buildawesome.one/plugin",
+  "name": "@sveti/one-plugin",
   "version": "1.5.1",
   "type": "module",
   "exports": {

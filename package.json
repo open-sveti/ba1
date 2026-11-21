@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@buildawesome.one/kit.monorepo",
+  "name": "@sveti/one.monorepo",
   "workspaces": [
     "cli/",
     "cli/e2e/",

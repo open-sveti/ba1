@@ -1,5 +1,5 @@
 {
-  "name": "@buildawesome.one/config",
+  "name": "@sveti/one-config",
   "version": "1.5.5",
   "type": "module",
   "main": "./buildawesome.config.js",
@@ -7,8 +7,8 @@
     "@11ty/eleventy-navigation": "^1.0.5",
     "@11ty/eleventy-plugin-rss": "^3.1.0",
     "@sveti/blades": "^3.1.0",
-    "@buildawesome.one/cli": "^1.5.1",
-    "@buildawesome.one/plugin": "^1.5.0",
+    "@sveti/one-cli": "^1.5.1",
+    "@sveti/one-plugin": "^1.5.0",
     "@uncenter/eleventy-plugin-toc": "^2.1.1",
     "markdown-it": "^15.0.3",
     "markdown-it-anchor": "^10.0.0",

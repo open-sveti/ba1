@@ -24,13 +24,13 @@
 <!--section:plugin-->
 
 ```sh
-npm install @buildawesome.one/plugin
+npm install @sveti/one-plugin
 ```
 
 Then `addPlugin()` in your config:
 
 ```js {data-caption=buildawesome.config.js}
-import onePlugin from "@buildawesome.one/plugin";
+import onePlugin from "@sveti/one-plugin";
 
 export default function ($config) {
   $config.addPlugin(onePlugin);
@@ -80,7 +80,7 @@ $config.addPlugin(onePlugin, {
 <!--section:config-->
 
 ```sh
-npm install @awesome.me/buildawesome @buildawesome.one/config
+npm install @awesome.me/buildawesome @sveti/one-config
 ```
 
 Everything is installed automatically; the only manual step is to create a default layout.
@@ -100,7 +100,7 @@ echo "Hello, world! 🎈" > index.md
 : Now you can see the <b class="mark-brand">Build Awesome One</b> in action by using its own built-in config:
 
 ```sh
-npx @awesome.me/buildawesome --serve --config=node_modules/@buildawesome.one/config/buildawesome.config.js
+npx @awesome.me/buildawesome --serve --config=node_modules/@sveti/one-config/buildawesome.config.js
 ```
 
 ---<!--{class}-->
@@ -109,7 +109,7 @@ If you don't want to type `--config=...` every time, save it in your `package.js
 
 ```json
 "scripts": {
-  "build": "buildawesome --config=node_modules/@buildawesome.one/config/buildawesome.config.js",
+  "build": "buildawesome --config=node_modules/@sveti/one-config/buildawesome.config.js",
   "start": "npm run build -- --serve"
 }
 ```
@@ -127,7 +127,7 @@ Live examples:
 You can also import and use it as a base config:
 
 ```js {data-caption=buildawesome.config.js}
-import oneConfig from "@buildawesome.one/config";
+import oneConfig from "@sveti/one-config";
 
 export default async function ($config) {
   await oneConfig($config);
